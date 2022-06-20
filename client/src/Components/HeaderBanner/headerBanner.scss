@@ -1,0 +1,73 @@
+.header-banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 500px;
+
+    .bg-diagonal{
+        position: absolute;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNGRkZGRkYiPjxwYXRoIGQ9Ik0wIDB2MTQwaDEyODBMMCAweiIvPjwvZz48L3N2Zz4=");
+        background-size: 100% 100px;
+        bottom: 0;
+        height: 100px;
+        width: 100vw;
+        z-index: 12;
+    }
+    .swiper{
+        height: 100%;
+        .banner-elt{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .banner-elt-text{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0; 
+                background: rgba(black, 0.8);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                padding-top: 100px;
+                flex-direction: column;
+                font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+                h2{
+                    font-weight: bold;
+                    font-size: 60px;
+                    margin: 0;
+                }
+                h4{
+                    font-size: 32px;
+                    color: #fcb900;
+                    margin: 5px;
+                }
+                pre{
+                    width: 50%;
+                    margin: 0;
+                    font-weight: 900;
+                    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                span{
+                    margin: 0;
+                    color: #fcb900;
+                    font-weight: 900;
+                }
+
+            }
+            img{
+                z-index: -1;
+                object-fit: contain ;
+            }
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
