@@ -11,22 +11,26 @@
     align-items: center;
     justify-content: space-between;
     transition: .4s all ease-in-out;
-    z-index: 10;
+    z-index: 90;
+    a{
+        text-decoration: none;
+        
+    }
     &.scrolled{
         height: 50px;
-        background-color: #fcb900;
+        background-color: rgb(9, 8, 8);
         height: 30px;
+        opacity: 1;
         .logo{
             img{
-                width: 30%;
+                width: 40%;
                 padding: 0;
             }
         }
         .links{
             p{
-                color: black;
                 &.selected{
-                    color: black;
+                    color: #0b98fd;
                 }
             }
         }
@@ -34,6 +38,7 @@
     .logo{
         display: flex;
         align-items: center;
+        
         img{
             background-color: transparent;
             width: 50%;
@@ -57,7 +62,7 @@
                 opacity: .7;
             }
             &.selected{
-                color: #fcb900;
+                color: #fd580b;
             }
             svg{
                 margin: 0;

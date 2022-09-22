@@ -1,0 +1,97 @@
+.installation-way{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 20px;
+    margin-top: 20px;
+    border: 1px #0693e3 solid;
+    border-radius: 27.5px 27.5px 27.5px 27.5px;
+    padding: 10px;
+    transition: .3s ease-in-out;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+
+    .installation-way-header{
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        transition: .3s ease-in-out;
+        position: absolute;
+        top: 0;
+        background-color: #fff;
+        z-index: 9;
+        padding: 10px 20px;
+        cursor: pointer;
+        h3{
+            width: 100%;
+            margin: 0;
+            font-size: 18px;
+            padding-left: 11px;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        svg{
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }
+    .installation-way-info{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: .4s ease-in;
+        width: 100%;
+        height: auto;
+        font-family: 'Roboto Condensed', sans-serif;
+        z-index: -1;
+        img{
+            max-width: 100%;
+            object-fit: contain;
+            margin: 20px 0;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+            height: 100%;
+        }
+    }
+    &.show{
+        background-color: #0693e3;
+        border-color: #fff;
+        color: #fff;
+        .installation-way-info{
+            background-color: #2575fc;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            color: #fff;
+            margin-top: 30px;
+            padding: 10px;
+            width: 100%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            opacity: 1;
+            z-index: 1;
+            p{
+                height: auto;
+                height: 100%;
+                width: 100%;
+                margin: 10px 0;
+                opacity: 1;
+            }
+        }
+        .installation-way-header{
+            margin-top: 0;
+            height: 20px !important;
+            background-color: #0693e3;
+        }
+        
+    }
+}

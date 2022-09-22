@@ -1,0 +1,22 @@
+.installation{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 20px;
+    .installation-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            font-size: 33px;
+            text-decoration: underline;
+            font-family: 'Poppins', sans-serif;
+        }
+        pre{
+            color: #555;
+        }
+    }
+    .installation-ways{
+        height: 100%;
+    }
+}
